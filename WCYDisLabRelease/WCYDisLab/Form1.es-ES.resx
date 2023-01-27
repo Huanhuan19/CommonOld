@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>DisLab Sistema de Experimentación</value>
+  </data>
+  <data name="ClearDataMSG" xml:space="preserve">
+    <value>Todos los datos se borrarán, confirme para continuar</value>
+  </data>
+  <data name="ConfirmContinueMSG" xml:space="preserve">
+    <value>confirme para continuar</value>
+  </data>
+  <data name="ConfirmQuit" xml:space="preserve">
+    <value>confirme para salir</value>
+  </data>
+  <data name="ConfirmQuitMSG" xml:space="preserve">
+    <value>Confirme para cerrar el programa</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>conectar al servidor</value>
+  </data>
+  <data name="HidePad" xml:space="preserve">
+    <value>ocultar variables</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>desconectado</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>En linea</value>
+  </data>
+  <data name="openFileDialog_data.Filter" xml:space="preserve">
+    <value>archivos de datos *.exdata | *.exdata</value>
+  </data>
+  <data name="RemoveDataMSG" xml:space="preserve">
+    <value>Eliminar datos</value>
+  </data>
+  <data name="RemoveTimeMSG" xml:space="preserve">
+    <value>Eliminar el tiempo de muestreo</value>
+  </data>
+  <data name="saveFileDialog_data.Filter" xml:space="preserve">
+    <value>archivos de datos *.exdata | *.exdata</value>
+  </data>
+  <data name="SaveIntervalSetFailMSG" xml:space="preserve">
+    <value>Error al guardar definicion de intervalo</value>
+  </data>
+  <data name="SaveSensorDefineFailMSG" xml:space="preserve">
+    <value>Error al guardar el definicion del sensor</value>
+  </data>
+  <data name="ShowPad" xml:space="preserve">
+    <value>mostrar variables</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="toolStripButton_adjust.Text" xml:space="preserve">
+    <value>ajustar sensores</value>
+  </data>
+  <data name="toolStripButton_digital.Text" xml:space="preserve">
+    <value>medidor digital</value>
+  </data>
+  <data name="toolStripButton_graph.Text" xml:space="preserve">
+    <value>graficas</value>
+  </data>
+  <data name="toolStripButton_guid.Text" xml:space="preserve">
+    <value>guia</value>
+  </data>
+  <data name="toolStripButton_meter.Text" xml:space="preserve">
+    <value>medidor de UV</value>
+  </data>
+  <data name="toolStripButton_replay.Text" xml:space="preserve">
+    <value>reproducir</value>
+  </data>
+  <data name="toolStripButton_report.Text" xml:space="preserve">
+    <value>reporte</value>
+  </data>
+  <data name="toolStripButton_resultAnalysis.Text" xml:space="preserve">
+    <value>resultado</value>
+  </data>
+  <data name="toolStripButton_shot.Text" xml:space="preserve">
+    <value>registro</value>
+  </data>
+  <data name="toolStripButton_start.Text" xml:space="preserve">
+    <value>iniciar</value>
+  </data>
+  <data name="toolStripButton_stop.Text" xml:space="preserve">
+    <value>parar</value>
+  </data>
+  <data name="toolStripButton_table.Text" xml:space="preserve">
+    <value>tabla</value>
+  </data>
+  <data name="toolStripDropDownButton_onlineStatus.Text" xml:space="preserve">
+    <value>En linea</value>
+  </data>
+  <data name="toolStripMenuItem_about.Text" xml:space="preserve">
+    <value>Acerca de (&amp;A)</value>
+  </data>
+  <data name="toolStripMenuItem_cascade.Text" xml:space="preserve">
+    <value>Cascada (&amp;C)</value>
+  </data>
+  <data name="toolStripMenuItem_edit.Text" xml:space="preserve">
+    <value>Editar (&amp;E)</value>
+  </data>
+  <data name="toolStripMenuItem_files.Text" xml:space="preserve">
+    <value>Archivos (&amp;F)</value>
+  </data>
+  <data name="toolStripMenuItem_help.Text" xml:space="preserve">
+    <value>Ayuda (&amp;H)</value>
+  </data>
+  <data name="toolStripMenuItem_intervalSet.Text" xml:space="preserve">
+    <value>Definir Intervalos (&amp;I)</value>
+  </data>
+  <data name="toolStripMenuItem_localHelp.Text" xml:space="preserve">
+    <value>Archivo de Ayuda local (&amp;C)</value>
+  </data>
+  <data name="toolStripMenuItem_netHelp.Text" xml:space="preserve">
+    <value>Ayuda en línea (&amp;I)</value>
+  </data>
+  <data name="toolStripMenuItem_netProps.Text" xml:space="preserve">
+    <value>Propiedades de las conexiones (&amp;N)</value>
+  </data>
+  <data name="toolStripMenuItem_new.Text" xml:space="preserve">
+    <value>Nuevo (&amp;N)</value>
+  </data>
+  <data name="toolStripMenuItem_offline.Text" xml:space="preserve">
+    <value>Desconectado</value>
+  </data>
+  <data name="toolStripMenuItem_online.Text" xml:space="preserve">
+    <value>En linea</value>
+  </data>
+  <data name="toolStripMenuItem_open.Text" xml:space="preserve">
+    <value>Abrir (&amp;O)</value>
+  </data>
+  <data name="toolStripMenuItem_parrel.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="toolStripMenuItem_quit.Text" xml:space="preserve">
+    <value>Salir (&amp;X)</value>
+  </data>
+  <data name="toolStripMenuItem_remoeAll.Text" xml:space="preserve">
+    <value>Borrar datos (&amp;A)</value>
+  </data>
+  <data name="toolStripMenuItem_save.Text" xml:space="preserve">
+    <value>Guardar (&amp;S)</value>
+  </data>
+  <data name="toolStripMenuItem_saveAs.Text" xml:space="preserve">
+    <value>Guardar como (&amp;A)</value>
+  </data>
+  <data name="toolStripMenuItem_search.Text" xml:space="preserve">
+    <value>Buscar (&amp;S)</value>
+  </data>
+  <data name="toolStripMenuItem_selectFrequency.Text" xml:space="preserve">
+    <value>Frecuencia (&amp;F)</value>
+  </data>
+  <data name="toolStripMenuItem_sensorDefines.Text" xml:space="preserve">
+    <value>Sensores (&amp;S)</value>
+  </data>
+  <data name="toolStripMenuItem_tools.Text" xml:space="preserve">
+    <value>Herramientas (&amp;T)</value>
+  </data>
+  <data name="toolStripMenuItem_window.Text" xml:space="preserve">
+    <value>Ventanas (&amp;W)</value>
+  </data>
+  <data name="toolStripMenuItem_workArguments.Text" xml:space="preserve">
+    <value>Propiedades (&amp;P)</value>
+  </data>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>direccion del servidor</value>
+  </data>
+  <data name="toolStripStatusLabel_endProps.Text" xml:space="preserve">
+    <value>modo parar</value>
+  </data>
+  <data name="toolStripStatusLabel_frequency.Text" xml:space="preserve">
+    <value>frecuencia</value>
+  </data>
+  <data name="toolStripStatusLabel_process.Text" xml:space="preserve">
+    <value>proceso</value>
+  </data>
+  <data name="toolStripStatusLabel_shotProps.Text" xml:space="preserve">
+    <value>modo de disparo</value>
+  </data>
+  <data name="toolStripStatusLabel_startProps.Text" xml:space="preserve">
+    <value>modo iniciar</value>
+  </data>
+  <data name="toolStripStatusLabel_variables.Text" xml:space="preserve">
+    <value>variables</value>
+  </data>
+  <data name="Unconnect" xml:space="preserve">
+    <value />
+  </data>
+</root>

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>DisLab数字化实验室</value>
+  </data>
+  <data name="ClearDataMSG" xml:space="preserve">
+    <value>所有数据将被删除，继续吗？</value>
+  </data>
+  <data name="ConfirmContinueMSG" xml:space="preserve">
+    <value>，确认继续吗？</value>
+  </data>
+  <data name="ConfirmQuit" xml:space="preserve">
+    <value>确认退出</value>
+  </data>
+  <data name="ConfirmQuitMSG" xml:space="preserve">
+    <value>确认要关闭程序吗？</value>
+  </data>
+  <data name="HidePad" xml:space="preserve">
+    <value>隐藏变量</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="openFileDialog_data.Filter" xml:space="preserve">
+    <value>实验文件 *.exdata | *.exdata</value>
+  </data>
+  <data name="RemoveDataMSG" xml:space="preserve">
+    <value>删除数据</value>
+  </data>
+  <data name="RemoveTimeMSG" xml:space="preserve">
+    <value>删除采样次数：</value>
+  </data>
+  <data name="saveFileDialog_data.Filter" xml:space="preserve">
+    <value>实验文件 *.exdata|*.exdata</value>
+  </data>
+  <data name="SaveIntervalSetFailMSG" xml:space="preserve">
+    <value>保存采样间隔配置文件失败！</value>
+  </data>
+  <data name="SaveSensorDefineFailMSG" xml:space="preserve">
+    <value>保存传感器配置文件失败！</value>
+  </data>
+  <data name="ShowPad" xml:space="preserve">
+    <value>显示变量</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="toolStripButton_adjust.Text" xml:space="preserve">
+    <value>校准</value>
+  </data>
+  <data name="toolStripButton_digital.Text" xml:space="preserve">
+    <value>数字仪表</value>
+  </data>
+  <data name="toolStripButton_graph.Text" xml:space="preserve">
+    <value>点线图</value>
+  </data>
+  <data name="toolStripButton_guid.Text" xml:space="preserve">
+    <value>实验指导</value>
+  </data>
+  <data name="toolStripButton_meter.Text" xml:space="preserve">
+    <value>指针仪表</value>
+  </data>
+  <data name="toolStripButton_replay.Text" xml:space="preserve">
+    <value>重放</value>
+  </data>
+  <data name="toolStripButton_report.Text" xml:space="preserve">
+    <value>实验报告</value>
+  </data>
+  <data name="toolStripButton_resultAnalysis.Text" xml:space="preserve">
+    <value>结果分析</value>
+  </data>
+  <data name="toolStripButton_shot.Text" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="toolStripButton_start.Text" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="toolStripButton_stop.Text" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="toolStripButton_table.Text" xml:space="preserve">
+    <value>数据表格</value>
+  </data>
+  <data name="toolStripDropDownButton_onlineStatus.Text" xml:space="preserve">
+    <value>联机实验</value>
+  </data>
+  <data name="toolStripMenuItem_about.Text" xml:space="preserve">
+    <value>关于(&amp;A)...</value>
+  </data>
+  <data name="toolStripMenuItem_cascade.Text" xml:space="preserve">
+    <value>层叠(&amp;C)</value>
+  </data>
+  <data name="toolStripMenuItem_edit.Text" xml:space="preserve">
+    <value>编辑(&amp;E)</value>
+  </data>
+  <data name="toolStripMenuItem_files.Text" xml:space="preserve">
+    <value>文件(&amp;F)</value>
+  </data>
+  <data name="toolStripMenuItem_help.Text" xml:space="preserve">
+    <value>帮助(&amp;H)</value>
+  </data>
+  <data name="toolStripMenuItem_intervalSet.Text" xml:space="preserve">
+    <value>设置采样频率档位(&amp;I)</value>
+  </data>
+  <data name="toolStripMenuItem_localHelp.Text" xml:space="preserve">
+    <value>本机上的帮助文件内容(&amp;C)</value>
+  </data>
+  <data name="toolStripMenuItem_netHelp.Text" xml:space="preserve">
+    <value>在线帮助(&amp;I)</value>
+  </data>
+  <data name="toolStripMenuItem_netProps.Text" xml:space="preserve">
+    <value>网络设置(&amp;N)</value>
+  </data>
+  <data name="toolStripMenuItem_new.Text" xml:space="preserve">
+    <value>新建(&amp;N)</value>
+  </data>
+  <data name="toolStripMenuItem_offline.Text" xml:space="preserve">
+    <value>制作模板</value>
+  </data>
+  <data name="toolStripMenuItem_online.Text" xml:space="preserve">
+    <value>联机实验</value>
+  </data>
+  <data name="toolStripMenuItem_open.Text" xml:space="preserve">
+    <value>打开(&amp;O)</value>
+  </data>
+  <data name="toolStripMenuItem_parrel.Text" xml:space="preserve">
+    <value>并列(&amp;P)</value>
+  </data>
+  <data name="toolStripMenuItem_quit.Text" xml:space="preserve">
+    <value>退出(&amp;X)</value>
+  </data>
+  <data name="toolStripMenuItem_remoeAll.Text" xml:space="preserve">
+    <value>删除所有数据(&amp;A)</value>
+  </data>
+  <data name="toolStripMenuItem_save.Text" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="toolStripMenuItem_saveAs.Text" xml:space="preserve">
+    <value>另存为(&amp;A)</value>
+  </data>
+  <data name="toolStripMenuItem_search.Text" xml:space="preserve">
+    <value>搜索(&amp;S)</value>
+  </data>
+  <data name="toolStripMenuItem_selectFrequency.Text" xml:space="preserve">
+    <value>选择采样频率(&amp;F)</value>
+  </data>
+  <data name="toolStripMenuItem_sensorDefines.Text" xml:space="preserve">
+    <value>定义传感器(&amp;S)</value>
+  </data>
+  <data name="toolStripMenuItem_tools.Text" xml:space="preserve">
+    <value>工具(&amp;T)</value>
+  </data>
+  <data name="toolStripMenuItem_window.Text" xml:space="preserve">
+    <value>窗口(&amp;W)</value>
+  </data>
+  <data name="toolStripMenuItem_workArguments.Text" xml:space="preserve">
+    <value>实验属性(&amp;P)</value>
+  </data>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>主机地址</value>
+  </data>
+  <data name="toolStripStatusLabel_endProps.Text" xml:space="preserve">
+    <value>结束采样模式</value>
+  </data>
+  <data name="toolStripStatusLabel_frequency.Text" xml:space="preserve">
+    <value>采样频率</value>
+  </data>
+  <data name="toolStripStatusLabel_process.Text" xml:space="preserve">
+    <value>采样进度</value>
+  </data>
+  <data name="toolStripStatusLabel_shotProps.Text" xml:space="preserve">
+    <value>单点采样模式</value>
+  </data>
+  <data name="toolStripStatusLabel_startProps.Text" xml:space="preserve">
+    <value>开始采样模式</value>
+  </data>
+  <data name="toolStripStatusLabel_variables.Text" xml:space="preserve">
+    <value>查看变量</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>联网</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>脱机</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>联机</value>
+  </data>
+  <data name="Unconnect" xml:space="preserve">
+    <value>单机</value>
+  </data>
+  <data name="toolStripButton1.Text" xml:space="preserve">
+    <value>蓝牙搜索</value>
+  </data>
+</root>

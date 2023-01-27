@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EE4E769-8746-4B0D-B8F8-8470A23D4C12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCYDisLabServer</RootNamespace>
+    <AssemblyName>WCYDisLabServer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>chinaz17.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DisLabComm, Version=1.11.806.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WCYDisLab\Lib\DisLabComm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientInfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServerProps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServerProps.Designer.cs">
+      <DependentUpon>FormServerProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServerProps.resx">
+      <DependentUpon>FormServerProps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ClientManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chinaz17.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

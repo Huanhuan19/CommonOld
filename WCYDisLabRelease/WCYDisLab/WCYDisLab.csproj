@@ -1,0 +1,2599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83703845-68CA-424D-B827-BA9A2D825E21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCYDisLab</RootNamespace>
+    <AssemblyName>WCYDisLab</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>chinaz11.ico</ApplicationIcon>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AquaGauge, Version=1.0.2800.27798, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\AquaGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.27955, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\DataEngine.cs" />
+    <Compile Include="Classes\ExInfo.cs" />
+    <Compile Include="Classes\PublicMethods.cs" />
+    <Compile Include="Classes\UIProps.cs" />
+    <Compile Include="Classes\WindowProps.cs" />
+    <Compile Include="Controls\ConstantControler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ConstantControler.Designer.cs">
+      <DependentUpon>ConstantControler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VariablePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VariablePicker.Designer.cs">
+      <DependentUpon>VariablePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VariablesPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VariablesPad.Designer.cs">
+      <DependentUpon>VariablesPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalMeter\FormDigitalMeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigitalMeter\FormDigitalMeter.Designer.cs">
+      <DependentUpon>FormDigitalMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdjust.Designer.cs">
+      <DependentUpon>FormAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBlueComSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBlueComSet.Designer.cs">
+      <DependentUpon>FormBlueComSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBluetoothWarch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBluetoothWarch.designer.cs">
+      <DependentUpon>FormBluetoothWarch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConstantControler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConstantControler.Designer.cs">
+      <DependentUpon>FormConstantControler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConstantEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConstantEditor.Designer.cs">
+      <DependentUpon>FormConstantEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFontSizeSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFontSizeSetup.Designer.cs">
+      <DependentUpon>FormFontSizeSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrequencySet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFrequencySet.Designer.cs">
+      <DependentUpon>FormFrequencySet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputScaleRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputScaleRange.Designer.cs">
+      <DependentUpon>FormInputScaleRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNetProps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNetProps.Designer.cs">
+      <DependentUpon>FormNetProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPassword.Designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReplay.Designer.cs">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectLanguage.Designer.cs">
+      <DependentUpon>FormSelectLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSendData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSendData.Designer.cs">
+      <DependentUpon>FormSendData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVariablePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVariablePicker.Designer.cs">
+      <DependentUpon>FormVariablePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExprEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExprEditor.Designer.cs">
+      <DependentUpon>FormExprEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExProps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExProps.Designer.cs">
+      <DependentUpon>FormExProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputDouble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputDouble.Designer.cs">
+      <DependentUpon>FormInputDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputPosition.Designer.cs">
+      <DependentUpon>FormInputPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputText.Designer.cs">
+      <DependentUpon>FormInputText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIntervalCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIntervalCollection.Designer.cs">
+      <DependentUpon>FormIntervalCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIntervalEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIntervalEditor.Designer.cs">
+      <DependentUpon>FormIntervalEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectFormula.Designer.cs">
+      <DependentUpon>FormSelectFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectSensorOrExpr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectSensorOrExpr.Designer.cs">
+      <DependentUpon>FormSelectSensorOrExpr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSensorCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSensorCollection.Designer.cs">
+      <DependentUpon>FormSensorCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSensorEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSensorEditor.Designer.cs">
+      <DependentUpon>FormSensorEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSensorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSensorPicker.Designer.cs">
+      <DependentUpon>FormSensorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimeMultiPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimeMultiPicker.Designer.cs">
+      <DependentUpon>FormTimeMultiPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimeSinglePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimeSinglePicker.Designer.cs">
+      <DependentUpon>FormTimeSinglePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GateProps\GateCloseProps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GateProps\GateCloseProps.Designer.cs">
+      <DependentUpon>GateCloseProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GateProps\GateOpenProps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GateProps\GateOpenProps.Designer.cs">
+      <DependentUpon>GateOpenProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GateProps\ValueSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GateProps\ValueSet.Designer.cs">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\CurvePick.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graph\CurvePick.Designer.cs">
+      <DependentUpon>CurvePick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormCurveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormCurveEditor.Designer.cs">
+      <DependentUpon>FormCurveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormDataAnalysisSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormDataAnalysisSetup.Designer.cs">
+      <DependentUpon>FormDataAnalysisSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormGraph.Designer.cs">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormGraphLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormGraphLock.Designer.cs">
+      <DependentUpon>FormGraphLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormGraphProps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormGraphProps.Designer.cs">
+      <DependentUpon>FormGraphProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormLabelManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormLabelManager.Designer.cs">
+      <DependentUpon>FormLabelManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormManualCurveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormManualCurveEditor.Designer.cs">
+      <DependentUpon>FormManualCurveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormManualCurveManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormManualCurveManager.Designer.cs">
+      <DependentUpon>FormManualCurveManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormSelectColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormSelectColor.Designer.cs">
+      <DependentUpon>FormSelectColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormStandardCurveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormStandardCurveEditor.Designer.cs">
+      <DependentUpon>FormStandardCurveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormStandardCurveManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormStandardCurveManager.Designer.cs">
+      <DependentUpon>FormStandardCurveManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\GraphAddPointRecord.cs" />
+    <Compile Include="Graph\XAxisProps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graph\XAxisProps.Designer.cs">
+      <DependentUpon>XAxisProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\YAxisProps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graph\YAxisProps.Designer.cs">
+      <DependentUpon>YAxisProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guid\FormGuid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guid\FormGuid.Designer.cs">
+      <DependentUpon>FormGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meter\FormMeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meter\FormMeter.Designer.cs">
+      <DependentUpon>FormMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Classes\DataEngine.en-GB.resx">
+      <DependentUpon>DataEngine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\DataEngine.es-ES.resx">
+      <DependentUpon>DataEngine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\DataEngine.mn.resx">
+      <DependentUpon>DataEngine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\DataEngine.resx">
+      <DependentUpon>DataEngine.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataEngine.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\DataEngine.ru-RU.resx">
+      <DependentUpon>DataEngine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\DataEngine.zh-CN.resx">
+      <DependentUpon>DataEngine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ConstantControler.resx">
+      <DependentUpon>ConstantControler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablePicker.en-GB.resx">
+      <DependentUpon>VariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablePicker.es-Es.resx">
+      <DependentUpon>VariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablePicker.mn.resx">
+      <DependentUpon>VariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablePicker.resx">
+      <DependentUpon>VariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablePicker.ru-RU.resx">
+      <DependentUpon>VariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablePicker.zh-CN.resx">
+      <DependentUpon>VariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablesPad.en-GB.resx">
+      <DependentUpon>VariablesPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablesPad.es-ES.resx">
+      <DependentUpon>VariablesPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablesPad.mn.resx">
+      <DependentUpon>VariablesPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablesPad.resx">
+      <DependentUpon>VariablesPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablesPad.ru-RU.resx">
+      <DependentUpon>VariablesPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VariablesPad.zh-CN.resx">
+      <DependentUpon>VariablesPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalMeter\FormDigitalMeter.en-GB.resx">
+      <DependentUpon>FormDigitalMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalMeter\FormDigitalMeter.es-ES.resx">
+      <DependentUpon>FormDigitalMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalMeter\FormDigitalMeter.mn.resx">
+      <DependentUpon>FormDigitalMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalMeter\FormDigitalMeter.resx">
+      <DependentUpon>FormDigitalMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalMeter\FormDigitalMeter.ru-RU.resx">
+      <DependentUpon>FormDigitalMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalMeter\FormDigitalMeter.zh-CN.resx">
+      <DependentUpon>FormDigitalMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.en-GB.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.es-ES.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.mn.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.ru-RU.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.zh-CN.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.en-GB.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.es-ES.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.mn.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.ru-RU.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.zh-CN.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjust.en-GB.resx">
+      <DependentUpon>FormAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjust.es-ES.resx">
+      <DependentUpon>FormAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjust.mn.resx">
+      <DependentUpon>FormAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjust.resx">
+      <DependentUpon>FormAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjust.ru-RU.resx">
+      <DependentUpon>FormAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjust.zh-CN.resx">
+      <DependentUpon>FormAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBlueComSet.resx">
+      <DependentUpon>FormBlueComSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBluetoothWarch.en-GB.resx">
+      <DependentUpon>FormBluetoothWarch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBluetoothWarch.resx">
+      <DependentUpon>FormBluetoothWarch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBluetoothWarch.zh-CN.resx">
+      <DependentUpon>FormBluetoothWarch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantControler.en-GB.resx">
+      <DependentUpon>FormConstantControler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantControler.es-ES.resx">
+      <DependentUpon>FormConstantControler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantControler.mn.resx">
+      <DependentUpon>FormConstantControler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantControler.resx">
+      <DependentUpon>FormConstantControler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantControler.ru-RU.resx">
+      <DependentUpon>FormConstantControler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantControler.zh-CN.resx">
+      <DependentUpon>FormConstantControler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantEditor.en-GB.resx">
+      <DependentUpon>FormConstantEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantEditor.es-ES.resx">
+      <DependentUpon>FormConstantEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantEditor.mn.resx">
+      <DependentUpon>FormConstantEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantEditor.resx">
+      <DependentUpon>FormConstantEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantEditor.ru-RU.resx">
+      <DependentUpon>FormConstantEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstantEditor.zh-CN.resx">
+      <DependentUpon>FormConstantEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExprEditor.en-GB.resx">
+      <DependentUpon>FormExprEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExprEditor.mn.resx">
+      <DependentUpon>FormExprEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExprEditor.resx">
+      <DependentUpon>FormExprEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExprEditor.ru-RU.resx">
+      <DependentUpon>FormExprEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExprEditor.zh-CN.resx">
+      <DependentUpon>FormExprEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExProps.en-GB.resx">
+      <DependentUpon>FormExProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExProps.es-ES.resx">
+      <DependentUpon>FormExProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExProps.mn.resx">
+      <DependentUpon>FormExProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExProps.resx">
+      <DependentUpon>FormExProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExProps.ru-RU.resx">
+      <DependentUpon>FormExProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExProps.zh-CN.resx">
+      <DependentUpon>FormExProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFontSizeSetup.en-GB.resx">
+      <DependentUpon>FormFontSizeSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFontSizeSetup.es-ES.resx">
+      <DependentUpon>FormFontSizeSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFontSizeSetup.mn.resx">
+      <DependentUpon>FormFontSizeSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFontSizeSetup.resx">
+      <DependentUpon>FormFontSizeSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFontSizeSetup.ru-RU.resx">
+      <DependentUpon>FormFontSizeSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFontSizeSetup.zh-CN.resx">
+      <DependentUpon>FormFontSizeSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFrequencySet.en-GB.resx">
+      <DependentUpon>FormFrequencySet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFrequencySet.es-ES.resx">
+      <DependentUpon>FormFrequencySet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFrequencySet.mn.resx">
+      <DependentUpon>FormFrequencySet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFrequencySet.resx">
+      <DependentUpon>FormFrequencySet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFrequencySet.ru-RU.resx">
+      <DependentUpon>FormFrequencySet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFrequencySet.zh-CN.resx">
+      <DependentUpon>FormFrequencySet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.en-GB.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.es-ES.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.mn.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.ru-RU.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.zh-CN.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputDouble.en-GB.resx">
+      <DependentUpon>FormInputDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputDouble.es-ES.resx">
+      <DependentUpon>FormInputDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputDouble.mn.resx">
+      <DependentUpon>FormInputDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputDouble.resx">
+      <DependentUpon>FormInputDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputDouble.ru-RU.resx">
+      <DependentUpon>FormInputDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputDouble.zh-CN.resx">
+      <DependentUpon>FormInputDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputPosition.en-GB.resx">
+      <DependentUpon>FormInputPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputPosition.es-ES.resx">
+      <DependentUpon>FormInputPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputPosition.mn.resx">
+      <DependentUpon>FormInputPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputPosition.resx">
+      <DependentUpon>FormInputPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputPosition.ru-RU.resx">
+      <DependentUpon>FormInputPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputPosition.zh-CN.resx">
+      <DependentUpon>FormInputPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputScaleRange.en-GB.resx">
+      <DependentUpon>FormInputScaleRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputScaleRange.es-ES.resx">
+      <DependentUpon>FormInputScaleRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputScaleRange.mn.resx">
+      <DependentUpon>FormInputScaleRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputScaleRange.resx">
+      <DependentUpon>FormInputScaleRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputScaleRange.ru-RU.resx">
+      <DependentUpon>FormInputScaleRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputScaleRange.zh-CN.resx">
+      <DependentUpon>FormInputScaleRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputText.en-GB.resx">
+      <DependentUpon>FormInputText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputText.es-ES.resx">
+      <DependentUpon>FormInputText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputText.mn.resx">
+      <DependentUpon>FormInputText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputText.resx">
+      <DependentUpon>FormInputText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputText.ru-RU.resx">
+      <DependentUpon>FormInputText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputText.zh-CN.resx">
+      <DependentUpon>FormInputText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalCollection.en-GB.resx">
+      <DependentUpon>FormIntervalCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalCollection.es-ES.resx">
+      <DependentUpon>FormIntervalCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalCollection.mn.resx">
+      <DependentUpon>FormIntervalCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalCollection.resx">
+      <DependentUpon>FormIntervalCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalCollection.ru-RU.resx">
+      <DependentUpon>FormIntervalCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalCollection.zh-CN.resx">
+      <DependentUpon>FormIntervalCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalEditor.en-GB.resx">
+      <DependentUpon>FormIntervalEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalEditor.es-ES.resx">
+      <DependentUpon>FormIntervalEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalEditor.mn.resx">
+      <DependentUpon>FormIntervalEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalEditor.resx">
+      <DependentUpon>FormIntervalEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalEditor.ru-RU.resx">
+      <DependentUpon>FormIntervalEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntervalEditor.zh-CN.resx">
+      <DependentUpon>FormIntervalEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNetProps.en-GB.resx">
+      <DependentUpon>FormNetProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNetProps.es-ES.resx">
+      <DependentUpon>FormNetProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNetProps.mn.resx">
+      <DependentUpon>FormNetProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNetProps.resx">
+      <DependentUpon>FormNetProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNetProps.ru-RU.resx">
+      <DependentUpon>FormNetProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNetProps.zh-CN.resx">
+      <DependentUpon>FormNetProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.en-GB.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.es-ES.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.mn.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.ru-RU.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.zh-CN.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplay.en-GB.resx">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplay.es-ES.resx">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplay.mn.resx">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplay.resx">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplay.ru-RU.resx">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplay.zh-CN.resx">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectFormula.en-GB.resx">
+      <DependentUpon>FormSelectFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectFormula.es-ES.resx">
+      <DependentUpon>FormSelectFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectFormula.mn.resx">
+      <DependentUpon>FormSelectFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectFormula.resx">
+      <DependentUpon>FormSelectFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectFormula.ru-RU.resx">
+      <DependentUpon>FormSelectFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectFormula.zh-CN.resx">
+      <DependentUpon>FormSelectFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectLanguage.en-GB.resx">
+      <DependentUpon>FormSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectLanguage.es-ES.resx">
+      <DependentUpon>FormSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectLanguage.mn.resx">
+      <DependentUpon>FormSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectLanguage.resx">
+      <DependentUpon>FormSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectLanguage.ru-RU.resx">
+      <DependentUpon>FormSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectLanguage.zh-CN.resx">
+      <DependentUpon>FormSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectSensorOrExpr.resx">
+      <DependentUpon>FormSelectSensorOrExpr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendData.en-GB.resx">
+      <DependentUpon>FormSendData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendData.es-ES.resx">
+      <DependentUpon>FormSendData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendData.mn.resx">
+      <DependentUpon>FormSendData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendData.resx">
+      <DependentUpon>FormSendData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendData.ru-RU.resx">
+      <DependentUpon>FormSendData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendData.zh-CN.resx">
+      <DependentUpon>FormSendData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorCollection.en-GB.resx">
+      <DependentUpon>FormSensorCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorCollection.es-ES.resx">
+      <DependentUpon>FormSensorCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorCollection.mn.resx">
+      <DependentUpon>FormSensorCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorCollection.resx">
+      <DependentUpon>FormSensorCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorCollection.ru-RU.resx">
+      <DependentUpon>FormSensorCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorCollection.zh-CN.resx">
+      <DependentUpon>FormSensorCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorEditor.en-GB.resx">
+      <DependentUpon>FormSensorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorEditor.es-ES.resx">
+      <DependentUpon>FormSensorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorEditor.mn.resx">
+      <DependentUpon>FormSensorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorEditor.resx">
+      <DependentUpon>FormSensorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorEditor.ru-RU.resx">
+      <DependentUpon>FormSensorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorEditor.zh-CN.resx">
+      <DependentUpon>FormSensorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorPicker.en-GB.resx">
+      <DependentUpon>FormSensorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorPicker.es-ES.resx">
+      <DependentUpon>FormSensorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorPicker.mn.resx">
+      <DependentUpon>FormSensorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorPicker.resx">
+      <DependentUpon>FormSensorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorPicker.ru-RU.resx">
+      <DependentUpon>FormSensorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSensorPicker.zh-CN.resx">
+      <DependentUpon>FormSensorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeMultiPicker.en-GB.resx">
+      <DependentUpon>FormTimeMultiPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeMultipicker.es-ES.resx">
+      <DependentUpon>FormTimeMultiPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeMultiPicker.mn.resx">
+      <DependentUpon>FormTimeMultiPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeMultiPicker.resx">
+      <DependentUpon>FormTimeMultiPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeMultipicker.ru-RU.resx">
+      <DependentUpon>FormTimeMultiPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeMultiPicker.zh-CN.resx">
+      <DependentUpon>FormTimeMultiPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeSinglePicker.en-GB.resx">
+      <DependentUpon>FormTimeSinglePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeSinglePicker.es-ES.resx">
+      <DependentUpon>FormTimeSinglePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeSinglePicker.mn.resx">
+      <DependentUpon>FormTimeSinglePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeSinglePicker.resx">
+      <DependentUpon>FormTimeSinglePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeSinglePicker.ru-RU.resx">
+      <DependentUpon>FormTimeSinglePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeSinglePicker.zh-CN.resx">
+      <DependentUpon>FormTimeSinglePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVariablePicker.en-GB.resx">
+      <DependentUpon>FormVariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVariablePicker.es-ES.resx">
+      <DependentUpon>FormVariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVariablePicker.mn.resx">
+      <DependentUpon>FormVariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVariablePicker.resx">
+      <DependentUpon>FormVariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVariablePicker.ru-RU.resx">
+      <DependentUpon>FormVariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVariablePicker.zh-CN.resx">
+      <DependentUpon>FormVariablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateCloseProps.en-GB.resx">
+      <DependentUpon>GateCloseProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateCloseProps.es-ES.resx">
+      <DependentUpon>GateCloseProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateCloseProps.mn.resx">
+      <DependentUpon>GateCloseProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateCloseProps.resx">
+      <DependentUpon>GateCloseProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateCloseProps.ru-RU.resx">
+      <DependentUpon>GateCloseProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateCloseProps.zh-CN.resx">
+      <DependentUpon>GateCloseProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateOpenProps.en-GB.resx">
+      <DependentUpon>GateOpenProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateOpenProps.es-ES.resx">
+      <DependentUpon>GateOpenProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateOpenProps.mn.resx">
+      <DependentUpon>GateOpenProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateOpenProps.resx">
+      <DependentUpon>GateOpenProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateOpenProps.ru-RU.resx">
+      <DependentUpon>GateOpenProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\GateOpenProps.zh-CN.resx">
+      <DependentUpon>GateOpenProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\ValueSet.en-GB.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\ValueSet.es-ES.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\ValueSet.mn.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\ValueSet.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\ValueSet.ru-RU.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateProps\ValueSet.zh-CN.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\CurvePick.en-GB.resx">
+      <DependentUpon>CurvePick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\CurvePick.es-ES.resx">
+      <DependentUpon>CurvePick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\CurvePick.mn.resx">
+      <DependentUpon>CurvePick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\CurvePick.resx">
+      <DependentUpon>CurvePick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\CurvePick.ru-RU.resx">
+      <DependentUpon>CurvePick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\CurvePick.zh-CN.resx">
+      <DependentUpon>CurvePick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormCurveEditor.en-GB.resx">
+      <DependentUpon>FormCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormCurveEditor.es-ES.resx">
+      <DependentUpon>FormCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormCurveEditor.mn.resx">
+      <DependentUpon>FormCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormCurveEditor.resx">
+      <DependentUpon>FormCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormCurveEditor.ru-RU.resx">
+      <DependentUpon>FormCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormCurveEditor.zh-CN.resx">
+      <DependentUpon>FormCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormDataAnalysisSetup.en-GB.resx">
+      <DependentUpon>FormDataAnalysisSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormDataAnalysisSetup.es-ES.resx">
+      <DependentUpon>FormDataAnalysisSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormDataAnalysisSetup.mn.resx">
+      <DependentUpon>FormDataAnalysisSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormDataAnalysisSetup.resx">
+      <DependentUpon>FormDataAnalysisSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormDataAnalysisSetup.ru-RU.resx">
+      <DependentUpon>FormDataAnalysisSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormDataAnalysisSetup.zh-CN.resx">
+      <DependentUpon>FormDataAnalysisSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraph.en-GB.resx">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraph.es-ES.resx">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraph.mn.resx">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraph.resx">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraph.ru-RU.resx">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraph.zh-CN.resx">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphLock.en-GB.resx">
+      <DependentUpon>FormGraphLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphLock.es-ES.resx">
+      <DependentUpon>FormGraphLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphLock.mn.resx">
+      <DependentUpon>FormGraphLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphLock.resx">
+      <DependentUpon>FormGraphLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphLock.ru-RU.resx">
+      <DependentUpon>FormGraphLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphLock.zh-CN.resx">
+      <DependentUpon>FormGraphLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphProps.en-GB.resx">
+      <DependentUpon>FormGraphProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphProps.es-ES.resx">
+      <DependentUpon>FormGraphProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphProps.mn.resx">
+      <DependentUpon>FormGraphProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphProps.resx">
+      <DependentUpon>FormGraphProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphProps.ru-RU.resx">
+      <DependentUpon>FormGraphProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormGraphProps.zh-CN.resx">
+      <DependentUpon>FormGraphProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormLabelManager.en-GB.resx">
+      <DependentUpon>FormLabelManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormLabelManager.es-ES.resx">
+      <DependentUpon>FormLabelManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormLabelManager.mn.resx">
+      <DependentUpon>FormLabelManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormLabelManager.resx">
+      <DependentUpon>FormLabelManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormLabelManager.ru-RU.resx">
+      <DependentUpon>FormLabelManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormLabelManager.zh-CN.resx">
+      <DependentUpon>FormLabelManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveEditor.en-GB.resx">
+      <DependentUpon>FormManualCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveEditor.es-ES.resx">
+      <DependentUpon>FormManualCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveEditor.mn.resx">
+      <DependentUpon>FormManualCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveEditor.resx">
+      <DependentUpon>FormManualCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveEditor.ru-RU.resx">
+      <DependentUpon>FormManualCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveEditor.zh-CN.resx">
+      <DependentUpon>FormManualCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveManager.en-GB.resx">
+      <DependentUpon>FormManualCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveManager.es-ES.resx">
+      <DependentUpon>FormManualCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveManager.mn.resx">
+      <DependentUpon>FormManualCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveManager.resx">
+      <DependentUpon>FormManualCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveManager.ru-RU.resx">
+      <DependentUpon>FormManualCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormManualCurveManager.zh-CN.resx">
+      <DependentUpon>FormManualCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormSelectColor.resx">
+      <DependentUpon>FormSelectColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveEditor.en-GB.resx">
+      <DependentUpon>FormStandardCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveEditor.es-ES.resx">
+      <DependentUpon>FormStandardCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveEditor.mn.resx">
+      <DependentUpon>FormStandardCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveEditor.resx">
+      <DependentUpon>FormStandardCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveEditor.ru-RU.resx">
+      <DependentUpon>FormStandardCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveEditor.zh-CN.resx">
+      <DependentUpon>FormStandardCurveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveManager.en-GB.resx">
+      <DependentUpon>FormStandardCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveManager.es-ES.resx">
+      <DependentUpon>FormStandardCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveManager.mn.resx">
+      <DependentUpon>FormStandardCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveManager.resx">
+      <DependentUpon>FormStandardCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveManager.ru-RU.resx">
+      <DependentUpon>FormStandardCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormStandardCurveManager.zh-CN.resx">
+      <DependentUpon>FormStandardCurveManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\XAxisProps.en-GB.resx">
+      <DependentUpon>XAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\XAxisProps.es-ES.resx">
+      <DependentUpon>XAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\XAxisProps.mn.resx">
+      <DependentUpon>XAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\XAxisProps.resx">
+      <DependentUpon>XAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\XAxisProps.ru-RU.resx">
+      <DependentUpon>XAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\XAxisProps.zh-CN.resx">
+      <DependentUpon>XAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\YAxisProps.en-GB.resx">
+      <DependentUpon>YAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\YAxisProps.es-ES.resx">
+      <DependentUpon>YAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\YAxisProps.mn.resx">
+      <DependentUpon>YAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\YAxisProps.resx">
+      <DependentUpon>YAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\YAxisProps.ru-RU.resx">
+      <DependentUpon>YAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\YAxisProps.zh-CN.resx">
+      <DependentUpon>YAxisProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guid\FormGuid.en-GB.resx">
+      <DependentUpon>FormGuid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guid\FormGuid.es-ES.resx">
+      <DependentUpon>FormGuid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guid\FormGuid.mn.resx">
+      <DependentUpon>FormGuid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guid\FormGuid.resx">
+      <DependentUpon>FormGuid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guid\FormGuid.ru-RU.resx">
+      <DependentUpon>FormGuid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guid\FormGuid.zh-CN.resx">
+      <DependentUpon>FormGuid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter\FormMeter.en-GB.resx">
+      <DependentUpon>FormMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter\FormMeter.es-ES.resx">
+      <DependentUpon>FormMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter\FormMeter.mn.resx">
+      <DependentUpon>FormMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter\FormMeter.resx">
+      <DependentUpon>FormMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter\FormMeter.ru-RU.resx">
+      <DependentUpon>FormMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter\FormMeter.zh-CN.resx">
+      <DependentUpon>FormMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FormReport.en-GB.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FormReport.es-ES.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FormReport.mn.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FormReport.ru-RU.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FormReport.zh-CN.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\DataControlRes.en-GB.resx">
+      <DependentUpon>DataControlRes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\DataControlRes.mn.resx">
+      <DependentUpon>DataControlRes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\DataControlRes.resx">
+      <DependentUpon>DataControlRes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\DataControlRes.ru-RU.resx">
+      <DependentUpon>DataControlRes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\DataControlRes.zh-CN.resx">
+      <DependentUpon>DataControlRes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\Switch.en-GB.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\Switch.mn.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\Switch.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\Switch.ru-RU.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\Switch.zh-CN.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\WaveCreat.en-GB.resx">
+      <DependentUpon>WaveCreat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\WaveCreat.mn.resx">
+      <DependentUpon>WaveCreat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\WaveCreat.resx">
+      <DependentUpon>WaveCreat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\WaveCreat.ru-RU.resx">
+      <DependentUpon>WaveCreat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSet\WaveCreat.zh-CN.resx">
+      <DependentUpon>WaveCreat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\IndexCount.en-GB.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\IndexCount.es-ES.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\IndexCount.mn.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\IndexCount.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\IndexCount.ru-RU.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\IndexCount.zh-CN.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\StartProps.en-GB.resx">
+      <DependentUpon>StartProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\StartProps.es-ES.resx">
+      <DependentUpon>StartProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\StartProps.mn.resx">
+      <DependentUpon>StartProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\StartProps.resx">
+      <DependentUpon>StartProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\StartProps.ru-RU.resx">
+      <DependentUpon>StartProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\StartProps.zh-CN.resx">
+      <DependentUpon>StartProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\TimeStamp.en-GB.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\TimeStamp.es-ES.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\TimeStamp.mn.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\TimeStamp.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\TimeStamp.ru-RU.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\TimeStamp.zh-CN.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\ValueSet.en-GB.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\ValueSet.es-ES.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\ValueSet.mn.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\ValueSet.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\ValueSet.ru-RU.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartProps\ValueSet.zh-CN.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormLineNameSet.en-GB.resx">
+      <DependentUpon>FormLineNameSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormLineNameSet.resx">
+      <DependentUpon>FormLineNameSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormLineNameSet.zh-CN.resx">
+      <DependentUpon>FormLineNameSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatistic.en-GB.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatistic.es-ES.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatistic.mn.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatistic.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatistic.ru-RU.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatistic.zh-CN.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatisticMethodPicker.en-GB.resx">
+      <DependentUpon>FormStatisticMethodPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatisticMethodPicker.es-ES.resx">
+      <DependentUpon>FormStatisticMethodPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatisticMethodPicker.mn.resx">
+      <DependentUpon>FormStatisticMethodPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatisticMethodPicker.resx">
+      <DependentUpon>FormStatisticMethodPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatisticMethodPicker.ru-RU.resx">
+      <DependentUpon>FormStatisticMethodPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FormStatisticMethodPicker.zh-CN.resx">
+      <DependentUpon>FormStatisticMethodPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\IndexCount.en-GB.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\IndexCount.es-ES.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\IndexCount.mn.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\IndexCount.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\IndexCount.ru-RU.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\IndexCount.zh-CN.resx">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\StopProps.en-GB.resx">
+      <DependentUpon>StopProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\StopProps.es-ES.resx">
+      <DependentUpon>StopProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\StopProps.mn.resx">
+      <DependentUpon>StopProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\StopProps.resx">
+      <DependentUpon>StopProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\StopProps.ru-RU.resx">
+      <DependentUpon>StopProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\StopProps.zh-CN.resx">
+      <DependentUpon>StopProps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\TimeStamp.en-GB.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\TimeStamp.es-ES.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\TimeStamp.mn.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\TimeStamp.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\TimeStamp.ru-RU.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\TimeStamp.zh-CN.resx">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\ValueSet.en-GB.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\ValueSet.es-ES.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\ValueSet.mn.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\ValueSet.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\ValueSet.ru-RU.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopProps\ValueSet.zh-CN.resx">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\FormTable.en-GB.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\FormTable.es-ES.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\FormTable.mn.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\FormTable.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\FormTable.ru-RU.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\FormTable.zh-CN.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorSet\DataControlRes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorSet\DataControlRes.Designer.cs">
+      <DependentUpon>DataControlRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorSet\Switch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorSet\Switch.Designer.cs">
+      <DependentUpon>Switch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorSet\WaveCreat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorSet\WaveCreat.Designer.cs">
+      <DependentUpon>WaveCreat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartProps\IndexCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StartProps\IndexCount.Designer.cs">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartProps\StartProps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StartProps\StartProps.Designer.cs">
+      <DependentUpon>StartProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartProps\TimeStamp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StartProps\TimeStamp.Designer.cs">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartProps\ValueSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StartProps\ValueSet.Designer.cs">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\FormLineNameSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\FormLineNameSet.Designer.cs">
+      <DependentUpon>FormLineNameSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\FormStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\FormStatistic.Designer.cs">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\FormStatisticMethodPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\FormStatisticMethodPicker.Designer.cs">
+      <DependentUpon>FormStatisticMethodPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StopProps\IndexCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StopProps\IndexCount.Designer.cs">
+      <DependentUpon>IndexCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StopProps\StopProps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StopProps\StopProps.Designer.cs">
+      <DependentUpon>StopProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StopProps\TimeStamp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StopProps\TimeStamp.Designer.cs">
+      <DependentUpon>TimeStamp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StopProps\ValueSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StopProps\ValueSet.Designer.cs">
+      <DependentUpon>ValueSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\FormTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table\FormTable.Designer.cs">
+      <DependentUpon>FormTable.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\chinaz89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundcolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decimal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportEXL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fontsize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\highlighter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lockX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lockYleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lockYright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manualcurve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maskpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mousegesture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movetags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photograph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samplingtimes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setvalue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tagmanagement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Templete.xls" />
+    <None Include="Resources\zoomselection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="button_ok.ico" />
+    <Content Include="chinaz11.ico" />
+    <Content Include="chinaz17.ico" />
+    <None Include="Resources\WaveCreat.ru-RU.txt" />
+    <None Include="Resources\mn.jpg" />
+    <None Include="Resources\ru-RU.jpg" />
+    <None Include="Resources\WCY.jpg" />
+    <None Include="Resources\emc2.png" />
+    <None Include="Resources\Zhongguo-China.png" />
+    <None Include="Resources\UK.png" />
+    <None Include="Resources\24-arrow-previous.png" />
+    <None Include="Resources\24-arrow-next.png" />
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAnalysis\DataAnalysis\DataAnalysis.csproj">
+      <Project>{81CC4DA6-3159-4032-955D-087850E349B4}</Project>
+      <Name>DataAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExperimentProperties\ExperimentProperties\ExperimentProperties.csproj">
+      <Project>{1061133D-8083-4B15-90EB-19A26882CFC1}</Project>
+      <Name>ExperimentProperties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\KeyValue\KeyValue\KeyValue.csproj">
+      <Project>{8007184B-CFC8-40AB-99B7-7559DCE54710}</Project>
+      <Name>KeyValue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SensorManager\SensorManager\SensorManager.csproj">
+      <Project>{99F1939B-BCBC-4623-95F2-EF3A0A661E5F}</Project>
+      <Name>SensorManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TDataManager\TDataManager\TDataManager.csproj">
+      <Project>{016f06c2-5f7e-41bd-a602-90cf93a81a3d}</Project>
+      <Name>TDataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VirtualInstrument\VirtualInstrument\VirtualInstrument.csproj">
+      <Project>{E23D7B8C-191A-4399-B82A-7DB69EDC1DE6}</Project>
+      <Name>VirtualInstrument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCYDataSource\WCYDataSource\WCYDataSource.csproj">
+      <Project>{A2DAD353-BB80-4E23-9777-F7CF2B30A92F}</Project>
+      <Name>WCYDataSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DisLabComm\DisLabComm.csproj">
+      <Project>{962bb113-d2c4-4970-bcb8-3bef61b68a61}</Project>
+      <Name>DisLabComm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Public\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

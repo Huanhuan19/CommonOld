@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACJTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0dyb3VwBAAAAAZIZWFkZXIPSGVhZGVyQWxpZ25tZW50A1Rh
+        ZwROYW1lAQQCAShTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50AgAAAAIAAAAG
+        AwAAAAnkvKDmhJ/lmagF/P///yhTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50
+        AQAAAAd2YWx1ZV9fAAgCAAAAAgAAAAoGBQAAABRsaXN0Vmlld0dyb3VwX3NlbnNvcgs=
+</value>
+  </data>
+  <data name="listView1.Groups1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACJTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0dyb3VwBAAAAAZIZWFkZXIPSGVhZGVyQWxpZ25tZW50A1Rh
+        ZwROYW1lAQQCAShTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50AgAAAAIAAAAG
+        AwAAAA/miYvlt6Xorr7nva7ph48F/P///yhTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxp
+        Z25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAAgAAAAoGBQAAABZsaXN0Vmlld0dyb3VwX2NvbnN0YW50Cw==
+</value>
+  </data>
+  <data name="listView1.Groups2" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACJTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0dyb3VwBAAAAAZIZWFkZXIPSGVhZGVyQWxpZ25tZW50A1Rh
+        ZwROYW1lAQQCAShTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50AgAAAAIAAAAG
+        AwAAAAzorqHnrpflhazlvI8F/P///yhTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25t
+        ZW50AQAAAAd2YWx1ZV9fAAgCAAAAAgAAAAoGBQAAABJsaXN0Vmlld0dyb3VwX2V4cHIL
+</value>
+  </data>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABs
+        EgAAAk1TRnQBSQFMAgEBBAEAAYABAAGAAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABIAMAAQEBAAEgBgABIP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wA7AAGtAbcBuAH/
+        Aa0BtwG4Af8BrQG3AbgB/wGtAbcBuAH/MAABrQG3AbgB/wGtAbcBuAH/Aa0BtwG4Af8BrQG3AbgB/zAA
+        Aa0BtwG4Af8BrQG3AbgB/wGtAbcBuAH/Aa0BtwG4Af9oAAGtAbcBuAH/Aa0BtwG4Af8BsQGPAVcB/wGx
+        AY8BVwH/AbEBjwFXAf8BsQGPAVcB/wGtAbcBuAH/Aa0BtwG4Af8gAAGtAbcBuAH/Aa0BtwG4Af8BKwGY
+        AWQB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wGtAbcBuAH/Aa0BtwG4Af8gAAGtAbcBuAH/Aa0BtwG4
+        Af8BAAFIAv8BAAFIAv8BAAFIAv8BAAFIAv8BrQG3AbgB/wGtAbcBuAH/WAABrQG3AbgB/wGtAbcBuAH/
+        AbEBjwFXAf8BsQGPAVcB/wHGAaABZQH/AeMBuAGJAf8BsQGPAVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGP
+        AVcB/wGtAbcBuAH/Aa0BtwG4Af8QAAGtAbcBuAH/Aa0BtwG4Af8BKwGYAWQB/wErAZgBZAH/AT0BtgGU
+        Af8BVwHhAcIB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wErAZgBZAH/Aa0BtwG4Af8BrQG3AbgB/xAA
+        Aa0BtwG4Af8BrQG3AbgB/wEAAUgC/wEAAUgC/wENAVsC/wE3AYYC/wEAAUgC/wEAAUgC/wEAAUgC/wEA
+        AUgC/wGtAbcBuAH/Aa0BtwG4Af8UAAGtAbcBuAH/Aa0BtwG4Af8BrQG3AbgB/wGtAbcBuAH/Aa0BtwG4
+        Af8BrQG3AbgB/wGtAbcBuAH/Aa0BtwG4Af8BrQG3AbgB/wGtAbcBuAH/EAABrQG3AbgB/wGxAY8BVwH/
+        AbEBjwFXAf8BxgGgAWUB/wHjAbgBiQH/AeMBuAGJAf8B4wG4AYkB/wGxAY8BVwH/AbEBjwFXAf8BsQGP
+        AVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGPAVcB/wGtAbcBuAH/CAABrQG3AbgB/wErAZgBZAH/ASsBmAFk
+        Af8BPQG2AZQB/wFXAeEBwgH/AVcB4QHCAf8BVwHhAcIB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wEr
+        AZgBZAH/ASsBmAFkAf8BKwGYAWQB/wGtAbcBuAH/CAABrQG3AbgB/wEAAUgC/wEAAUgC/wENAVsC/wE3
+        AYYC/wE3AYYC/wE3AYYC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wGtAbcBuAH/
+        DAABrQG3AbgB/wEAAVQC/wEAAVQC/wEAAVQC/wEAAVQC/wEAAVQC/wEAAVQC/wEAAVQC/wEAAVQC/wEA
+        AVQC/wEAAVQC/wGtAbcBuAH/DAABsQGPAVcB/wHGAaABZQH/AeMBuAGJAf8B4wG4AYkB/wHjAbgBiQH/
+        AeMBuAGJAf8B4wG4AYkB/wGxAY8BVwH/AbEBjwFXAf8BsQGPAVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGP
+        AVcB/wGxAY8BVwH/CAABKwGYAWQB/wE9AbYBlAH/AVcB4QHCAf8BVwHhAcIB/wFXAeEBwgH/AVcB4QHC
+        Af8BVwHhAcIB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wEr
+        AZgBZAH/CQABSAL/AQ0BWwL/ATcBhgL/ATcBhgL/ATcBhgL/ATcBhgL/ATcBhgL/AQABSAL/AQABSAL/
+        AQABSAL/AQABSAL/AQABSAL/AQABSAL/AQABSAL/DQABVAL/ATYBegL/AYIBrQH+Af8BggGtAf4B/wGC
+        Aa0B/gH/AYIBrQH+Af8BggGtAf4B/wGCAa0B/gH/AYIBrQH+Af8BggGtAf4B/wE2AXoC/wEAAVQC/wwA
+        AbEBjwFXAf8B4wG4AYkB/wHjAbgBiQH/AeMBuAGJAf8B4wG4AYkB/wHjAbgBiQH/AeMBuAGJAf8BsQGP
+        AVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGPAVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGPAVcB/wgAASsBmAFk
+        Af8BVwHhAcIB/wFXAeEBwgH/AVcB4QHCAf8BVwHhAcIB/wFXAeEBwgH/AVcB4QHCAf8BKwGYAWQB/wEr
+        AZgBZAH/ASsBmAFkAf8BKwGYAWQB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wkAAUgC/wE3AYYC/wE3
+        AYYC/wE3AYYC/wE3AYYC/wE3AYYC/wE3AYYC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wEA
+        AUgC/wEAAUgC/w0AAVQC/wE2AXoC/wGCAa0B/gH/AYIBrQH+Af8BggGtAf4B/wIgAcQB/wIgAcQB/wGC
+        Aa0B/gH/AYIBrQH+Af8BggGtAf4B/wE2AXoC/wEAAVQC/wwAAbEBjwFXAf8B4wG4AYkB/wHjAbgBiQH/
+        AeMBuAGJAf8B4wG4AYkB/wHjAbgBiQH/AeMBuAGJAf8BsQGPAVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGP
+        AVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGPAVcB/wgAASsBmAFkAf8BVwHhAcIB/wFXAeEBwgH/AVcB4QHC
+        Af8BVwHhAcIB/wFXAeEBwgH/AVcB4QHCAf8BKwGYAWQB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wEr
+        AZgBZAH/ASsBmAFkAf8BKwGYAWQB/wkAAUgC/wE3AYYC/wE3AYYC/wE3AYYC/wE3AYYC/wE3AYYC/wE3
+        AYYC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/wEAAUgC/xEAAVQC/wGCAa0B/gH/
+        AYIBrQH+Af8BggGtAf4B/wGCAa0B/gH/AYIBrQH+Af8BggGtAf4B/wGCAa0B/gH/AYIBrQH+Af8BAAFU
+        Av8QAAGxAY8BVwH/AeMBuAGJAf8B4wG4AYkB/wHjAbgBiQH/AeMBuAGJAf8B4wG4AYkB/wHjAbgBiQH/
+        AbEBjwFXAf8BsQGPAVcB/wGxAY8BVwH/AbEBjwFXAf8BsQGPAVcB/wGxAY8BVwH/AbEBjwFXAf8IAAEr
+        AZgBZAH/AVcB4QHCAf8BVwHhAcIB/wFXAeEBwgH/AVcB4QHCAf8BVwHhAcIB/wFXAeEBwgH/ASsBmAFk
+        Af8BKwGYAWQB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/wErAZgBZAH/ASsBmAFkAf8JAAFIAv8BNwGG
+        Av8BNwGGAv8BNwGGAv8BNwGGAv8BNwGGAv8BNwGGAv8BAAFIAv8BAAFIAv8BAAFIAv8BAAFIAv8BAAFI
+        Av8BAAFIAv8BAAFIAv8RAAFUAv8BNgF6Av8BggGtAf4B/wGCAa0B/gH/AiABxAH/AiABxAH/AYIBrQH+
+        Af8BggGtAf4B/wE2AXoC/wEAAVQC/xAAAbEBjwFXAf8B4wG4AYkB/wHjAbgBiQH/AeMBuAGJAf8B4wG4
+        AYkB/wH7AfUB7gH/Ae8B1wG9Af8B7wHXAb0B/wHvAdcBvQH/AbEBjwFXAf8BsQGPAVcB/wGxAY8BVwH/
+        AbEBjwFXAf8BsQGPAVcB/wgAASsBmAFkAf8BVwHhAcIB/wFXAeEBwgH/AVcB4QHCAf8BVwHhAcIB/wHo
+        AfkB9QH/AdQB9wHuAf8B1AH3Ae4B/wHUAfcB7gH/ASsBmAFkAf8BKwGYAWQB/wErAZgBZAH/ASsBmAFk
+        Af8BKwGYAWQB/wkAAUgC/wE3AYYC/wE3AYYC/wE3AYYC/wE3AYYC/wHGAdcB9QH/AY4BtQL/AY4BtQL/
+        AY4BtQL/AQABSAL/AQABSAL/AQABSAL/AQABSAL/AQABSAL/FQABVAL/AYIBrQH+Af8BggGtAf4B/wIg
+        AcQB/wIgAcQB/wGCAa0B/gH/AYIBrQH+Af8BAAFUAv8UAAGxAY8BVwH/AeMBuAGJAf8B4wG4AYkB/wH7
+        AfUB7gH/AfsB9QHuAf8B+wH1Ae4B/wHvAdcBvQH/Ae8B1wG9Af8B7wHXAb0B/wHvAdcBvQH/Ae8B1wG9
+        Af8BsQGPAVcB/wGxAY8BVwH/AbEBjwFXAf8IAAErAZgBZAH/AVcB4QHCAf8BVwHhAcIB/wHoAfkB9QH/
+        AegB+QH1Af8B6AH5AfUB/wHUAfcB7gH/AdQB9wHuAf8B1AH3Ae4B/wHUAfcB7gH/AdQB9wHuAf8BKwGY
+        AWQB/wErAZgBZAH/ASsBmAFkAf8JAAFIAv8BNwGGAv8BNwGGAv8BxgHXAfUB/wHGAdcB9QH/AcYB1wH1
+        Af8BjgG1Av8BjgG1Av8BjgG1Av8BjgG1Av8BjgG1Av8BAAFIAv8BAAFIAv8BAAFIAv8VAAFUAv8BUAGO
+        AfsB/wHGAdcB9QH/AiABxAH/AiABxAH/AcYB1wH1Af8BUAGOAfsB/wEAAVQC/xQAAbEBjwFXAf8BzwG5
+        AZ8B/wH7AfUB7gH/AfsB9QHuAf8B+wH1Ae4B/wH7AfUB7gH/Ae8B1wG9Af8B7wHXAb0B/wHvAdcBvQH/
+        Ae8B1wG9Af8B7wHXAb0B/wHvAdcBvQH/AcsBrQGKAf8BsQGPAVcB/wgAASsBmAFkAf8BggHAAakB/wHo
+        AfkB9QH/AegB+QH1Af8B6AH5AfUB/wHoAfkB9QH/AdQB9wHuAf8B1AH3Ae4B/wHUAfcB7gH/AdQB9wHu
+        Af8B1AH3Ae4B/wHUAfcB7gH/AWoBvwGmAf8BKwGYAWQB/wkAAUgC/wFCAYwB+wH/AcYB1wH1Af8BxgHX
+        AfUB/wHGAdcB9QH/AcYB1wH1Af8BjgG1Av8BjgG1Av8BjgG1Av8BjgG1Av8BjgG1Av8BjgG1Av8BKgFu
+        Av8BAAFIAv8ZAAFUAv8BUAGOAfsB/wHGAdcB9QH/AcYB1wH1Af8BUAGOAfsB/wEAAVQC/xwAAbEBjwFX
+        Af8BsQGPAVcB/wHPAbkBnwH/AfsB9QHuAf8B+wH1Ae4B/wHvAdcBvQH/Ae8B1wG9Af8B7wHXAb0B/wHv
+        AdcBvQH/AcsBrQGKAf8BsQGPAVcB/wGxAY8BVwH/EAABKwGYAWQB/wErAZgBZAH/AYIBwAGpAf8B6AH5
+        AfUB/wHoAfkB9QH/AdQB9wHuAf8B1AH3Ae4B/wHUAfcB7gH/AdQB9wHuAf8BagG/AaYB/wErAZgBZAH/
+        ASsBmAFkAf8RAAFIAv8BAAFIAv8BQgGMAfsB/wHGAdcB9QH/AcYB1wH1Af8BjgG1Av8BjgG1Av8BjgG1
+        Av8BjgG1Av8BKgFuAv8BAAFIAv8BAAFIAv8cAAHGAdcB9QH/AQABVAL/AVABjgH7Af8BUAGOAfsB/wEA
+        AVQC/wHGAdcB9QH/JAABsQGPAVcB/wGxAY8BVwH/Ac8BuQGfAf8B7wHXAb0B/wHvAdcBvQH/AcsBrQGK
+        Af8BsQGPAVcB/wGxAY8BVwH/IAABKwGYAWQB/wErAZgBZAH/AYIBwAGpAf8B1AH3Ae4B/wHUAfcB7gH/
+        AWoBvwGmAf8BKwGYAWQB/wErAZgBZAH/IQABSAL/AQABSAL/AUIBjAH7Af8BjgG1Av8BjgG1Av8BKgFu
+        Av8BAAFIAv8BAAFIAv8oAAHGAdcB9QH/AQABVAL/AQABVAL/AcYB1wH1Af8wAAGxAY8BVwH/AbEBjwFX
+        Af8BsQGPAVcB/wGxAY8BVwH/MAABKwGYAWQB/wErAZgBZAH/ASsBmAFkAf8BKwGYAWQB/zEAAUgC/wEA
+        AUgC/wEAAUgC/wEAAUgC//8AWQABQgFNAT4HAAE+AwABKAMAAUADAAEgAwABAQEAAQEGAAEBFgAD/4EA
+        CP8B/AE/AfwBPwH8AT8C/wHwAQ8B8AEPAfABDwL/AcABAwHAAQMBwAEDAeABBwGAAQEBgAEBAYABAQHA
+        AQMBgAEBAYABAQGAAQEBwAEDAYABAQGAAQEBgAEBAcABAwGAAQEBgAEBAYABAQHgAQcBgAEBAYABAQGA
+        AQEB4AEHAYABAQGAAQEBgAEBAfABDwGAAQEBgAEBAYABAQHwAQ8BgAEBAYABAQGAAQEB+AEfAcABAwHA
+        AQMBwAEDAfgBHwHwAQ8B8AEPAfABDwH8AT8B/AE/AfwBPwH8AT8K/ws=
+</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="contextMenuStrip_add.ToolTip" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="contextMenuStrip_constant.ToolTip" xml:space="preserve">
+    <value>手工设置量</value>
+  </data>
+  <data name="contextMenuStrip_expr.ToolTip" xml:space="preserve">
+    <value>计算公式</value>
+  </data>
+  <data name="contextMenuStrip_sensor.ToolTip" xml:space="preserve">
+    <value>传感器量</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>变量和计算公式</value>
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value>传感器量、手工设置量、计算公式列表
+鼠标右键点击下方列表框的空白处可以新增新的变量、手工设置量、计算公式
+鼠标右键点击下方列表框中的变量，可以对该变量进行删除、修改、排序或弹出观测窗口等操作</value>
+  </data>
+  <data name="listView1.ToolTip" xml:space="preserve">
+    <value>鼠标右键点击列表内项目可弹出菜单选择可进行的操作。</value>
+  </data>
+  <data name="SensorError" xml:space="preserve">
+    <value>未按模板要求正确连接传感器</value>
+  </data>
+  <data name="toolStripMenuItem_addConstant.Text" xml:space="preserve">
+    <value>新增手工设置量</value>
+  </data>
+  <data name="toolStripMenuItem_addExpr.Text" xml:space="preserve">
+    <value>新增计算公式</value>
+  </data>
+  <data name="toolStripMenuItem_addSensor.Text" xml:space="preserve">
+    <value>新增传感器</value>
+  </data>
+  <data name="toolStripMenuItem_editConstant.Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="toolStripMenuItem_editExpr.Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="toolStripMenuItem_monitorConstant.Text" xml:space="preserve">
+    <value>监控</value>
+  </data>
+  <data name="toolStripMenuItem_moveDownExpr.Text" xml:space="preserve">
+    <value>下移</value>
+  </data>
+  <data name="toolStripMenuItem_moveUpExpr.Text" xml:space="preserve">
+    <value>上移</value>
+  </data>
+  <data name="toolStripMenuItem_popDigitalMeterExpr.Text" xml:space="preserve">
+    <value>数字仪表</value>
+  </data>
+  <data name="toolStripMenuItem_popDigitalMeterSensor.Text" xml:space="preserve">
+    <value>数字仪表</value>
+  </data>
+  <data name="toolStripMenuItem_popGraphExpr.Text" xml:space="preserve">
+    <value>点线图</value>
+  </data>
+  <data name="toolStripMenuItem_popGraphSensor.Text" xml:space="preserve">
+    <value>点线图</value>
+  </data>
+  <data name="toolStripMenuItem_popMeterExpr.Text" xml:space="preserve">
+    <value>指针仪表</value>
+  </data>
+  <data name="toolStripMenuItem_popMeterSensor.Text" xml:space="preserve">
+    <value>指针仪表</value>
+  </data>
+  <data name="toolStripMenuItem_popTableExpr.Text" xml:space="preserve">
+    <value>数据表格</value>
+  </data>
+  <data name="toolStripMenuItem_popTableSensor.Text" xml:space="preserve">
+    <value>数据表格</value>
+  </data>
+  <data name="toolStripMenuItem_removeConstant.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="toolStripMenuItem_removeExpr.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="toolStripMenuItem_removeSensor.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="toolStripMenuItem_shiftSetSensor.Text" xml:space="preserve">
+    <value>设置档位</value>
+  </data>
+  <data name="Constant" xml:space="preserve">
+    <value>手工设置量</value>
+  </data>
+  <data name="Expr" xml:space="preserve">
+    <value>计算公式</value>
+  </data>
+  <data name="Sensor" xml:space="preserve">
+    <value>传感器</value>
+  </data>
+</root>

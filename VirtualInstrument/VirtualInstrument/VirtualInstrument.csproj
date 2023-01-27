@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E23D7B8C-191A-4399-B82A-7DB69EDC1DE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtualInstrument</RootNamespace>
+    <AssemblyName>VirtualInstrument</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AGauge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AGauge\AGauge\bin\Release\AGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="AquaGauge, Version=1.0.2800.27798, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AquaGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAnalysis, Version=1.11.408.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DataAnalysis\DataAnalysis\bin\Release\DataAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectX.Capture, Version=1.0.4617.16801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DirectXCapture\DirectX.Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="KeyValue, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KeyValue\KeyValue\bin\Release\KeyValue.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.900.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\microsoft.directx.audiovideoplayback\X86\5.3.0000000.900 built by DIRECTX\Microsoft.DirectX.AudioVideoPlayback.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.27534, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ZedGraph\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Camera.Designer.cs">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camera2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Camera2.Designer.cs">
+      <DependentUpon>Camera2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CameraProps.cs" />
+    <Compile Include="Classes\ControlSelectedEvent.cs" />
+    <Compile Include="Classes\ControlType.cs" />
+    <Compile Include="Classes\GraphAxisDefine.cs" />
+    <Compile Include="Classes\GraphFitLineDefine.cs" />
+    <Compile Include="Classes\GraphHighLighterDefine.cs" />
+    <Compile Include="Classes\GraphLabelDefine.cs" />
+    <Compile Include="Classes\GraphLine.cs" />
+    <Compile Include="Classes\GraphManualLine.cs" />
+    <Compile Include="Classes\GraphMouseAction.cs" />
+    <Compile Include="Classes\GraphMouseActionEvent.cs" />
+    <Compile Include="Classes\GraphObjCollection.cs" />
+    <Compile Include="Classes\GraphLineDefine.cs" />
+    <Compile Include="Classes\GraphObjType.cs" />
+    <Compile Include="Classes\GraphPointDefine.cs" />
+    <Compile Include="Classes\ColumnDefine.cs" />
+    <Compile Include="Classes\PublicMethods.cs" />
+    <Compile Include="Classes\StandardCurveDefine.cs" />
+    <Compile Include="Classes\StatisticBox.cs" />
+    <Compile Include="Classes\TableRowRecord.cs" />
+    <Compile Include="Classes\VectorLine.cs" />
+    <Compile Include="Classes\VectorLineConnectCollection.cs" />
+    <Compile Include="Classes\VideoCapture.cs" />
+    <Compile Include="Colorimeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Colorimeter.Designer.cs">
+      <DependentUpon>Colorimeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalDisplay\DigitalDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DigitalDisplay\DigitalDisplay.Designer.cs">
+      <DependentUpon>DigitalDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DigitalMeter.Designer.cs">
+      <DependentUpon>DigitalMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graph.Designer.cs">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Guid.Designer.cs">
+      <DependentUpon>Guid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualTable2\Cell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManualTable2\Cell.Designer.cs">
+      <DependentUpon>Cell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualTable2\ManualTable2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManualTable2\ManualTable2.Designer.cs">
+      <DependentUpon>ManualTable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualTable\ManualTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManualTable\ManualTable.Designer.cs">
+      <DependentUpon>ManualTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualTable\MTColumnDefine.cs" />
+    <Compile Include="Meter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Meter.Designer.cs">
+      <DependentUpon>Meter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Performance.Designer.cs">
+      <DependentUpon>Performance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickView\QuickText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickView\QuickText.Designer.cs">
+      <DependentUpon>QuickText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickView\QuickView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickView\QuickView.Designer.cs">
+      <DependentUpon>QuickView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table.Designer.cs">
+      <DependentUpon>Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thermometer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Thermometer.Designer.cs">
+      <DependentUpon>Thermometer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UVMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UVMeter.Designer.cs">
+      <DependentUpon>UVMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vector.Designer.cs">
+      <DependentUpon>Vector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vector2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vector2.Designer.cs">
+      <DependentUpon>Vector2.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Camera.resx">
+      <DependentUpon>Camera.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camera2.resx">
+      <DependentUpon>Camera2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colorimeter.resx">
+      <DependentUpon>Colorimeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalDisplay\DigitalDisplay.resx">
+      <DependentUpon>DigitalDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitalMeter.resx">
+      <DependentUpon>DigitalMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph.resx">
+      <DependentUpon>Graph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guid.resx">
+      <DependentUpon>Guid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualTable2\Cell.resx">
+      <DependentUpon>Cell.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualTable2\ManualTable2.resx">
+      <DependentUpon>ManualTable2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualTable\ManualTable.resx">
+      <DependentUpon>ManualTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter.resx">
+      <DependentUpon>Meter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance.resx">
+      <DependentUpon>Performance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickView\QuickText.resx">
+      <DependentUpon>QuickText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickView\QuickView.resx">
+      <DependentUpon>QuickView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.en-GB.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.es-ES.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.mn.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.ru-RU.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.zh-CN.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table.resx">
+      <DependentUpon>Table.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thermometer.resx">
+      <DependentUpon>Thermometer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UVMeter.resx">
+      <DependentUpon>UVMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vector.resx">
+      <DependentUpon>Vector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vector2.resx">
+      <DependentUpon>Vector2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="DXTMSFTLib">
+      <Guid>{5E77EB03-937C-11D1-B047-00AA003B6061}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DxVBLibA">
+      <Guid>{E1211242-8E94-11D1-8808-00C04FC2C603}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

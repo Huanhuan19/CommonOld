@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDataManager", "TDataManager\TDataManager.csproj", "{016F06C2-5F7E-41BD-A602-90CF93A81A3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{016F06C2-5F7E-41BD-A602-90CF93A81A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016F06C2-5F7E-41BD-A602-90CF93A81A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016F06C2-5F7E-41BD-A602-90CF93A81A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016F06C2-5F7E-41BD-A602-90CF93A81A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
