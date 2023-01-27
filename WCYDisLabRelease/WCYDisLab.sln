@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1267
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCYDisLab", "WCYDisLab\WCYDisLab.csproj", "{83703845-68CA-424D-B827-BA9A2D825E21}"
 EndProject
@@ -12,10 +12,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyValue", "..\KeyValue\KeyValue\KeyValue.csproj", "{8007184B-CFC8-40AB-99B7-7559DCE54710}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorManager", "..\SensorManager\SensorManager\SensorManager.csproj", "{99F1939B-BCBC-4623-95F2-EF3A0A661E5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8007184B-CFC8-40AB-99B7-7559DCE54710} = {8007184B-CFC8-40AB-99B7-7559DCE54710}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDataManager", "..\TDataManager\TDataManager\TDataManager.csproj", "{016F06C2-5F7E-41BD-A602-90CF93A81A3D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81CC4DA6-3159-4032-955D-087850E349B4} = {81CC4DA6-3159-4032-955D-087850E349B4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualInstrument", "..\VirtualInstrument\VirtualInstrument\VirtualInstrument.csproj", "{E23D7B8C-191A-4399-B82A-7DB69EDC1DE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81CC4DA6-3159-4032-955D-087850E349B4} = {81CC4DA6-3159-4032-955D-087850E349B4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCYDataSource", "..\WCYDataSource\WCYDataSource\WCYDataSource.csproj", "{A2DAD353-BB80-4E23-9777-F7CF2B30A92F}"
 EndProject

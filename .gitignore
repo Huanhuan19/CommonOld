@@ -1,0 +1,12 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/DataAnalysis/DataAnalysis/obj/x86/Release
+/ExperimentProperties/ExperimentProperties/obj/x86/Release
+/KeyValue/KeyValue/obj/x86/Release
+/SensorManager/SensorManager/obj/x86/Release
+/TDataManager/TDataManager/obj/x86/Release
+/VirtualInstrument/VirtualInstrument/obj/x86/Release
+/WCYDataSource/WCYDataSource/obj/x86/Release
+/WCYDisLabRelease
